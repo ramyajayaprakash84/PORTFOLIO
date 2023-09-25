@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+}
+nav{
+    width: 100%;
+    position: sticky !important;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 5px 8px rgba(0,0,0,.5);
+    z-index: 10;
+}
+.navbar-brand{
+    font-weight: 600;
+}
+.nav-link{
+    color: white !important;
+    border-bottom: 1px solid transparent;
+}
+.nav-link:hover{
+    border-bottom: 1px solid white;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* home secction */
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(images/bg1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+#home p{
+    position: absolute;
+    top: 50%;
+    font-size: 100px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+#home p:nth-child(1){
+    animation-delay: 0s;
+}
+#home p:nth-child(2){
+    animation-delay: 3s;
+}
+
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#home span{
+    color: white;
+}
+
+@media screen and (max-width: 576px){
+    #home p{
+        font-size: 80px;
+    }
+}
+    
+/* about section */
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(51, 30, 0);;
+}
+.circle{
+    width: 350px;
+    height: 350px;
+    background: rgb(24, 14, 0); 
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0px 5px 12px rgba(0,0,0,.7);
+    margin-bottom: 3%;
+    margin-top: 6%;
+    transition: 1s;
+
+}
+.circle img { 
+    position: absolute;
+    height: 300px;
+    top: 7%;
+    left:7%;
+    border-radius: 2000%; 
+    filter: drop-shadow(0px, 30px, 15px rgba(255, 248, 248, 0.4));
+}
+
+
+.circle:hover{
+    width: 700px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circle:hover img{
+    position: absolute;
+    left: 3%;
+    transition: 1s;
+}
+.circle:hover .content{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    opacity: 1;
+    transition: 1s;
+}
+.circle .content{
+    opacity: 0;
+}
+@media screen and(max-width:576px) {
+    .circle{
+        width: 350px;
+        height: 350px;
+        font-size: 25px;
+        background: rgb(51, 30, 0);;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0px 5px 12px rgba(19, 18, 18, 0.7);
+        margin-bottom: 3%;
+        margin-top: 6%;
+        transition: 1s;   
+}
+.circle:hover img{
+    position: absolute;
+    left: 3%;
+    transition: 1s;
+}
+.circle:hover{
+    width: 1000px;
+    height: 350px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.circle:hover .content{
+    position: absolute;
+    top: 15%;
+    right: 0;
+    color: rgb(255, 255, 255);
+    padding: px;
+    width: 50%;
+    opacity: 1;
+    transition: 1s;
+}
+.circle .content{
+    opacity: 0;
+}
+}
+/* skills secction */
+#skills{
+    padding-top: 7%;
+    color: white;
+    background: rgb(51, 30, 0);;
+}
+#skills .container{
+    margin-top: 5%;;
+    margin-bottom: 5%;
+}
+label{
+    font-size: 20px;
+    color: white;
+}
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px rgb(68, 66, 66), -2px -2px -5px white;
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px white, -2px -2px -5px rgb(68, 66, 66);
+}
+
+#contact{
+    padding-top: 10%;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)),url(images/bg1.png);
+}
+#contact .contact{
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
